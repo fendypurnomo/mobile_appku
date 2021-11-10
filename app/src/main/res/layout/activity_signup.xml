@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.signup.SignupActivity">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+
+		<TextView
+			android:id="@+id/tvBrand"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:text="@string/tvBrand"
+			android:textColor="@color/colorPrimary"
+			android:textSize="48sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"/>
+
+		<TextView
+			android:id="@+id/tvSignup"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:text="@string/pageTitleSignup"
+			android:textSize="24sp"
+			app:layout_constraintEnd_toEndOf="@+id/tvBrand"
+			app:layout_constraintStart_toStartOf="@+id/tvBrand"
+			app:layout_constraintTop_toBottomOf="@+id/tvBrand"/>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tlFirstName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:hint="@string/lblFirstName"
+			app:layout_constraintEnd_toEndOf="@+id/tvSignup"
+			app:layout_constraintStart_toStartOf="@+id/tvSignup"
+			app:layout_constraintTop_toBottomOf="@+id/tvSignup"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etFirstname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tlLastName"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:hint="@string/lblLastName"
+			app:layout_constraintEnd_toEndOf="@+id/tlFirstName"
+			app:layout_constraintStart_toStartOf="@+id/tlFirstName"
+			app:layout_constraintTop_toBottomOf="@+id/tlFirstName"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etLastname"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="text"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tlEmail"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:hint="@string/lblEmail"
+			app:layout_constraintEnd_toEndOf="@+id/tlLastName"
+			app:layout_constraintStart_toStartOf="@+id/tlLastName"
+			app:layout_constraintTop_toBottomOf="@+id/tlLastName"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etEmail"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textEmailAddress"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<RadioGroup
+			android:id="@+id/rgGender"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:orientation="horizontal"
+			app:layout_constraintStart_toStartOf="@+id/tlEmail"
+			app:layout_constraintTop_toBottomOf="@+id/tlEmail">
+
+			<RadioButton
+				android:id="@+id/rbGenderMan"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/cbGenderMan"/>
+
+			<RadioButton
+				android:id="@+id/rbGenderWoman"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="15dp"
+				android:text="@string/cbGenderWoman"/>
+		</RadioGroup>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tlPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:hint="@string/lblPassword"
+			app:layout_constraintEnd_toEndOf="@+id/rgGender"
+			app:layout_constraintStart_toStartOf="@+id/rgGender"
+			app:layout_constraintTop_toBottomOf="@+id/rgGender"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/tlConfirmPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:hint="@string/lblConfirmPassword"
+			app:passwordToggleEnabled="true"
+			app:layout_constraintEnd_toEndOf="@+id/tlPassword"
+			app:layout_constraintStart_toStartOf="@+id/tlPassword"
+			app:layout_constraintTop_toBottomOf="@+id/tlPassword"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etConfirmPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<Button
+			android:id="@+id/btnSignup"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/dr_rounded"
+			android:text="@string/btnSignup"
+			android:textAllCaps="false"
+			app:layout_constraintEnd_toEndOf="@+id/tlConfirmPassword"
+			app:layout_constraintStart_toStartOf="@+id/tlConfirmPassword"
+			app:layout_constraintTop_toBottomOf="@id/tlConfirmPassword"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:orientation="horizontal"
+			app:layout_constraintEnd_toEndOf="@+id/btnSignup"
+			app:layout_constraintStart_toStartOf="@+id/btnSignup"
+			app:layout_constraintTop_toBottomOf="@+id/btnSignup">
+
+			<TextView
+				android:id="@+id/tvAlreadyHaveAccount"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvAlreadyHaveAccount"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:id="@+id/tvLinkSignin"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="6dp"
+				android:paddingEnd="0dp"
+				android:paddingStart="6dp"
+				android:paddingTop="6dp"
+				android:text="@string/lSignin"
+				android:textColor="@color/colorPrimary"
+				android:textSize="16sp"/>
+		</LinearLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

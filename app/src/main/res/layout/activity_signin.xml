@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".ui.signin.SigninActivity">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:paddingBottom="24dp"
+		android:paddingLeft="24dp"
+		android:paddingRight="24dp">
+
+		<TextView
+			android:id="@+id/tvBrand"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:text="@string/tvBrand"
+			android:textColor="@color/colorPrimary"
+			android:textSize="48sp"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent"/>
+
+		<TextView
+			android:id="@+id/tvSignin"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:text="@string/tvSignin"
+			android:textSize="24sp"
+			app:layout_constraintEnd_toEndOf="@+id/tvBrand"
+			app:layout_constraintStart_toStartOf="@+id/tvBrand"
+			app:layout_constraintTop_toBottomOf="@+id/tvBrand"/>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/etlUsername"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:hint="@string/etUsername"
+			app:layout_constraintEnd_toEndOf="@+id/tvSignin"
+			app:layout_constraintStart_toStartOf="@+id/tvSignin"
+			app:layout_constraintTop_toBottomOf="@+id/tvSignin"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etUsername"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textEmailAddress"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<com.google.android.material.textfield.TextInputLayout
+			android:id="@+id/etlPassword"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:hint="@string/etPassword"
+			app:passwordToggleEnabled="true"
+			app:layout_constraintEnd_toEndOf="@+id/etlUsername"
+			app:layout_constraintStart_toStartOf="@+id/etlUsername"
+			app:layout_constraintTop_toBottomOf="@id/etlUsername"
+			style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+			<com.google.android.material.textfield.TextInputEditText
+				android:id="@+id/etPassword"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:inputType="textPassword"/>
+		</com.google.android.material.textfield.TextInputLayout>
+
+		<TextView
+			android:id="@+id/tvLinkForgotPassword"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:paddingBottom="6dp"
+			android:paddingTop="6dp"
+			android:text="@string/tvForgotPassword"
+			android:textColor="@color/colorPrimary"
+			android:textSize="16sp"
+			app:layout_constraintEnd_toEndOf="@+id/etlPassword"
+			app:layout_constraintTop_toBottomOf="@+id/etlPassword"/>
+
+		<Button
+			android:id="@+id/btnSignin"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="25dp"
+			android:background="@drawable/dr_rounded"
+			android:text="@string/btnSignin"
+			android:textAllCaps="false"
+			app:layout_constraintEnd_toEndOf="@+id/etlPassword"
+			app:layout_constraintStart_toStartOf="@+id/etlPassword"
+			app:layout_constraintTop_toBottomOf="@id/tvLinkForgotPassword"/>
+
+		<LinearLayout
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="50dp"
+			android:orientation="horizontal"
+			app:layout_constraintEnd_toEndOf="@+id/btnSignin"
+			app:layout_constraintStart_toStartOf="@+id/btnSignin"
+			app:layout_constraintTop_toBottomOf="@+id/btnSignin">
+
+			<TextView
+				android:id="@+id/tvSignup"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/tvSignup"
+				android:textSize="16sp"/>
+
+			<TextView
+				android:id="@+id/tvLinkSignup"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="6dp"
+				android:paddingEnd="0dp"
+				android:paddingStart="6dp"
+				android:paddingTop="6dp"
+				android:text="@string/lSignup"
+				android:textColor="@color/colorPrimary"
+				android:textSize="16sp"/>
+		</LinearLayout>
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

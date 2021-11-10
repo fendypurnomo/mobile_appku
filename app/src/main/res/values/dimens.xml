@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Default screen margins, per the Android Design guidelines. -->
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
+
+	<!-- Padding -->
+	<dimen name="p2">2dp</dimen>
+	<dimen name="p4">4dp</dimen>
+	<dimen name="p6">6dp</dimen>
+	<dimen name="p8">8dp</dimen>
+	<dimen name="p10">10dp</dimen>
+	<dimen name="p12">12dp</dimen>
+	<dimen name="p14">14dp</dimen>
+	<dimen name="p16">16dp</dimen>
+	<dimen name="p18">18dp</dimen>
+	<dimen name="p20">20dp</dimen>
+	<dimen name="p22">22dp</dimen>
+	<dimen name="p24">24dp</dimen>
+	<dimen name="p26">26dp</dimen>
+	<dimen name="p28">28dp</dimen>
+	<dimen name="p30">30dp</dimen>
+
+	<!-- Margin -->
+	<dimen name="m2">2dp</dimen>
+	<dimen name="m4">4dp</dimen>
+	<dimen name="m6">6dp</dimen>
+	<dimen name="m8">8dp</dimen>
+	<dimen name="m10">10dp</dimen>
+	<dimen name="m12">12dp</dimen>
+	<dimen name="m14">14dp</dimen>
+	<dimen name="m16">16dp</dimen>
+	<dimen name="m18">18dp</dimen>
+	<dimen name="m20">20dp</dimen>
+	<dimen name="m22">22dp</dimen>
+	<dimen name="m24">24dp</dimen>
+	<dimen name="m26">26dp</dimen>
+	<dimen name="m28">28dp</dimen>
+	<dimen name="m30">30dp</dimen>
+</resources>

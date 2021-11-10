@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="appName">Fendy Purnomo</string>
+
+	<!-- Button -->
+	<string name="btnForgotPassword">Kirim Email</string>
+	<string name="btnMovieTrailer">Cuplikan</string>
+	<string name="btnMovieWatch">Tonton</string>
+	<string name="btnSignin">Masuk</string>
+	<string name="btnSignup">Daftar</string>
+
+	<!-- Card -->
+	<string name="cardSubtitle">Card subtitle</string>
+	<string name="cardSupportingText">Card supporting text</string>
+	<string name="cardTitle">Card title</string>
+
+	<!-- Checkbox -->
+	<string name="cbGenderMan">Pria</string>
+	<string name="cbGenderWoman">Wanita</string>
+
+	<!-- Content Description -->
+	<string name="contentDescFab">Bottom app bar</string>
+	<string name="contentDescFavorite">Favorit</string>
+	<string name="contentDescMore">Lainnya</string>
+	<string name="contentDescNotifications">Pemberitahuan</string>
+	<string name="contentDescSearch">Pencarian</string>
+	<string name="contentDescMedia">Image Card</string>
+	<string name="contentDescImgProfile">Profile</string>
+
+	<!-- Edit Text -->
+	<string name="etUsername">Email atau nama pengguna</string>
+	<string name="etPassword">Kata sandi</string>
+
+	<!-- Fragment -->
+	<string name="fragmentHome">Beranda</string>
+	<string name="fragmentProfile">Profil</string>
+	<string name="fragmentLibrary">Pustaka</string>
+	<string name="fragmentMore">Lainnya</string>
+	<string name="fragmentNotification">Notifikasi</string>
+	<string name="fragmentSetting">Pengaturan</string>
+	<string name="fragmentFavorite">Favorit</string>
+	<string name="fragmentHelp">Bantuan</string>
+	<string name="fragmentSearch">Pencarian</string>
+
+	<!-- Group Subtitle -->
+	<string name="groupSubtitle">Subtitle</string>
+	<string name="headerTitle">Header title</string>
+	<string name="headerSubtitle">Header subtitle</string>
+	<string name="lSignin">Masuk</string>
+	<string name="lSignup">Daftar</string>
+
+	<!-- Page Title -->
+	<string name="pageTitle">Page Title</string>
+	<string name="pageTitleSignup">Daftar</string>
+
+	<!-- Text Layout -->
+	<string name="tlMenuMovie">Film</string>
+	<string name="tlMenuHome">Beranda</string>
+	<string name="tlMenuMessage">Pesan</string>
+	<string name="tlMenuNotification">Notifikasi</string>
+	<string name="tlMenuProfile">Profil</string>
+	<string name="tlMenuLibrary">Pustaka</string>
+	<string name="tlMenuSetting">Pengaturan</string>
+
+	<!-- Title -->
+	<string name="ttlFavorite">Favorit</string>
+	<string name="ttlHelp">Bantuan</string>
+	<string name="ttlMore">Lainnya</string>
+	<string name="ttlNotification">Notifikasi</string>
+	<string name="ttlProfile">Profil</string>
+	<string name="ttlSearch">Cari</string>
+	<string name="ttlSetting">Pengaturan</string>
+	<string name="ttlHome">Beranda</string>
+	<string name="ttlLibrary">Pustaka</string>
+	<string name="ttlTopAppBar">App bar top</string>
+
+	<!-- Text View -->
+	<string name="tvAlreadyHaveAccount">Sudah punya akun?</string>
+	<string name="tvBrand">Appku</string>
+	<string name="tvForgotPassword">Lupa kata sandi?</string>
+	<string name="tvSignin">Masuk</string>
+	<string name="tvSignup">Belum punya akun?</string>
+
+	<!-- Label -->
+	<string name="lblFirstName">Nama Depan</string>
+	<string name="lblLastName">Nama Belakang</string>
+	<string name="lblEmail">Email</string>
+	<string name="lblPassword">Kata Sandi</string>
+	<string name="lblConfirmPassword">Konfirmasi Kata Sandi</string>
+	<string name="txtSplashScreen">AppKu</string>
+	<string name="txtSplashScreenFrom">from</string>
+	<string name="txtSplashScreenBrand">Fendy Purnomo</string>
+	<string name="fragmentMovie">Film</string>
+</resources>

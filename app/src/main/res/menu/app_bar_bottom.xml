@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+		android:id="@+id/itemSearch"
+		android:icon="@drawable/ic_search"
+		android:title="@string/ttlSearch"
+		android:contentDescription="@string/contentDescSearch"
+		app:showAsAction="ifRoom"/>
+
+	<item
+		android:id="@+id/itemMore"
+		android:icon="@drawable/ic_more_black"
+		android:title="@string/ttlMore"
+		android:contentDescription="@string/contentDescMore"
+		app:showAsAction="never"/>
+</menu>
